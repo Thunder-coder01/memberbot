@@ -5,7 +5,7 @@ You seen the title. This is the official old code of our member bot, written in 
 
 
 ## Usage/Examples
-Go to ./modules directory and edit the `config.py`.
+Go to ./modules directory and edit the `client.py`.
 ## Requirements
 - Bot Token
 - Bot Client Secret
