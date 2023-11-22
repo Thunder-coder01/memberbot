@@ -56,15 +56,15 @@ class Bot(AutoShardedBot):
         And the database (postgres)
         """
         try:
-            self.db = await create_pool(
-                **{
-                    "host": Authorization.db.host,
-                    "port": Authorization.db.port,
-                    "user": Authorization.db.user,
-                    "database": Authorization.db.database,
-                    "password": Authorization.db.password,
-                },
-            )
+            # self.db = await create_pool(
+            #     **{
+            #         "host": Authorization.db.host,
+            #         "port": Authorization.db.port,
+            #         "user": Authorization.db.user,
+            #         "database": Authorization.db.database,
+            #         "password": Authorization.db.password,
+            #     },
+            # )
         except Exception as e:
             raise Exception(f"Error logging into the db -> {e}")
 
