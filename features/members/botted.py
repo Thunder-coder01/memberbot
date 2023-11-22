@@ -7,7 +7,6 @@ from discord.ui import View
 
 from modules.bot import Bot
 from modules.client import Authorization
-from modules.managers.instagram.models import InstagramModel
 from modules.managers.spammer import Spammerworker
 from modules.managers.worker import Worker
 
@@ -19,33 +18,6 @@ class MemberBoost(Cog):
 
     def __init__(self: "MemberBoost", bot: Bot) -> None:
         self.bot: Bot = bot
-
-    @command(
-        name="ifollow",
-    )
-    async def ifollow(
-        self: "MemberBoost",
-        ctx: Context,
-        username: str = None,
-    ) -> None:
-        channel = ctx.channel.id
-        if not channel == Authorization.channels.farm:
-            return await ctx.error("You cannot execute commands here!")
-        if not username:
-            return await ctx.error(
-                "You must provide a valid instagram **username**!",
-            )
-        try:
-            Model = InstagramModel(
-                username=username,
-            )
-            r = await Model.__follow__()
-            await ctx.approve(
-                f"Now following `{username}` with `35` followers!",
-            )
-
-        except Exception as e:
-            return await ctx.warn(e)
 
     @command(
         name="spam",
