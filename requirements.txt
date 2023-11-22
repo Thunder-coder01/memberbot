@@ -1,0 +1,6 @@
+discord
+jishaku
+aiohttp
+asyncio
+asyncpg
+colord
