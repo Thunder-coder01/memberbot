@@ -65,6 +65,7 @@ class Bot(AutoShardedBot):
             #         "password": Authorization.db.password,
             #     },
             # )
+            pass
         except Exception as e:
             raise Exception(f"Error logging into the db -> {e}")
 
