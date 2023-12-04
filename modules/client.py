@@ -4,7 +4,7 @@ class Authorization:
     """
 
     token: str = (
-        "Discord Bot token"
+        "MTE2ODM1MTkzNzMzOTU5NjgzMQ.GB8nod.NLDmVnrqxzmDghEyyot47VW_y3FhF4fbx1msdM"
     )
     secret: str = "Client secret"
     prefix: str = "."
