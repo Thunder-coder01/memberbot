@@ -38,7 +38,7 @@ class Bot(AutoShardedBot):
             activity=discord.Activity(
                 type=discord.ActivityType.competing,
                 url=Authorization.url,
-                name="Fastly ⚡",
+                name="Thunder ⚡",
             ),
         )
 
