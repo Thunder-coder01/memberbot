@@ -179,11 +179,11 @@ class Bot(AutoShardedBot):
                     inline=False,
                 )
                 .set_footer(
-                    text="⚡ Efficient Services by Fastly ⚡",
+                    text="⚡ Efficient Services by Thunder ⚡",
                     icon_url=self.author.display_avatar.url,
                 )
                 .set_author(
-                    name="Fastly Members ⚡",
+                    name="Thunder Members ⚡",
                     icon_url=self.guild.icon.url,
                 )
                 .set_thumbnail(
@@ -194,16 +194,16 @@ class Bot(AutoShardedBot):
         async def normal(self: "Bot.context", message: str) -> None:
             await self.send(
                 embed=Embed(
-                    title="**Fastly Services**",
+                    title="**Thunder Services**",
                     color=Color.blurple,
                     description=message,
                 )
                 .set_footer(
-                    text="⚡ Efficient Services by Fastly ⚡",
+                    text="⚡ Efficient Services by Thunder ⚡",
                     icon_url=self.author.display_avatar.url,
                 )
                 .set_author(
-                    name="Fastly Members ⚡",
+                    name="Thunder Members ⚡",
                     icon_url=self.guild.icon.url,
                 )
                 .set_thumbnail(
