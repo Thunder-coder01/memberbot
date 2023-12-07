@@ -94,12 +94,12 @@ class MemberBoost(Cog):
 
         user_roles = ctx.author.roles
         role_to_members = {
-            Authorization.roles.premium: 60,
-            Authorization.roles.plat: 50,
-            Authorization.roles.gold: 45,
-            Authorization.roles.silver: 35,
-            Authorization.roles.bronze: 20,
-            Authorization.roles.member: 15,
+            Authorization.roles.premium: 50,
+            Authorization.roles.plat: 40,
+            Authorization.roles.gold: 35,
+            Authorization.roles.silver: 20,
+            Authorization.roles.bronze: 15,
+            Authorization.roles.member: 10,
         }
 
         max_members = 3
