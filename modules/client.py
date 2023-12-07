@@ -6,9 +6,9 @@ class Authorization:
     token: str = (
         "MTE2ODM1MTkzNzMzOTU5NjgzMQ.GB8nod.NLDmVnrqxzmDghEyyot47VW_y3FhF4fbx1msdM"
     )
-    secret: str = "Client secret"
-    prefix: str = "."
-    url: str = "https://discord.gg/fastly"
+    secret: str = "M37HfDPVtAfcODU2SaCRwjI8c-MAm4X8"
+    prefix: str = "!"
+    url: str = "https://discord.gg/8T7S9GFpVN"
     owner_ids: list = [
         1181236538386948116,
     ] # Owner IDS, LIST
